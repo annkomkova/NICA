@@ -5,9 +5,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // showHeaderLetters()
   animElectrons()
   animNICA()
+  showComics()
   // showTextOnHover()
 })
-
+function showComics() {
+  const button = document.querySelector('.comicsButton')
+  const left = document.querySelector('.comicsLeft')
+  const right = document.querySelector('.comicsRight')
+  button.addEventListener('click', () => {
+    left.classList.toggle('goLeft')
+    right.classList.toggle('goRight')
+  })
+}
 function animNICA() {
   const canvas = document.getElementById('canvasNICA')
   const ctx = canvas.getContext('2d', { alpha: true })

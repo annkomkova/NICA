@@ -323,3 +323,28 @@
 .yadro {
   animation: rotate 16s infinite linear;
 }
+@keyframes walk {
+  0% {
+    background-position: 0 top;
+  }
+  25% {
+    background-position: -8.4014vw top;
+  }
+  50% {
+    background-position: 0 top;
+  }
+  75% {
+    background-position: -8.4014vw top;
+  }
+}
+
+@keyframes path {
+  0% {
+    left: -8.4014vw;
+    top: 0;
+  }
+  100% {
+    left: 100%;
+    top: 0;
+  }
+}

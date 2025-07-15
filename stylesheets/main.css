@@ -19,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vw;
+  height: 50vw;
 }
 .h1 {
   display: flex;
@@ -130,7 +130,7 @@
   border-radius: 2vw;
 }
 #canvasNICA {
-  margin-top: 1.8vw;
+  /* margin-top: 1.8vw; */
   position: absolute;
   top: 0;
   left: 0;
@@ -154,6 +154,9 @@
   font-size: 1.2vw;
   line-height: 1.3;
 }
+.text p + p {
+  margin-top: 1.5vw;
+}
 .question:hover + .text {
   display: block;
 }
@@ -173,8 +176,20 @@
   transition: all ease 0.2s;
   cursor: help;
 }
+.atom .question {
+  color: white;
+}
+.atom .text {
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.7);
+  z-index: 9;
+  position: absolute;
+}
 .question2 {
   top: 6vw;
+}
+.question.bB {
+  background-color: rgba(20, 20, 20, 0.7);
 }
 
 /* _______________________ATOM AND BIG BANG____________________ */
@@ -221,5 +236,94 @@
   width: 64%;
   height: 34vw;
   background-size: cover;
+  position: relative;
 }
 /* _______________________COMICS____________________ */
+.comicsWrapper {
+  width: 100%;
+  height: 50vw;
+  position: relative;
+}
+.comicsFraim,
+.comicsText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.comicsText {
+  font-size: 2vw;
+  padding: 3vw 2vw;
+  justify-content: space-between;
+}
+.comicsFraim {
+  position: absolute;
+  overflow: hidden;
+}
+.comicsFraim > div {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+.comicsText > div {
+  width: 40%;
+}
+.comicsLeft {
+  background-image: url('../images/comic-1.svg');
+}
+.comicsRight {
+  background-image: url('../images/comic-2.svg');
+}
+.goLeft {
+  transform: translateX(-50vw);
+  transition: transform 0.8s ease;
+}
+.goRight {
+  transform: translateX(50vw);
+  transition: transform 0.8s ease;
+}
+.comicsButton {
+  width: 6vw;
+  height: 3vw;
+  color: white;
+  background-color: var(--blue);
+  font-size: 1.5vw;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  left: calc(50% - 3vw);
+  top: 85%;
+  border-radius: 2vw;
+  border: none;
+}
+/* _______________________TIHOHODKA____________________ */
+.tihohodkaWalk {
+  background-color: var(--dark);
+}
+.tihohodkaWalk:nth-of-type(2) {
+  transform: rotate(180deg);
+}
+.tihohodka {
+  width: 8.4014vw;
+  height: 4.3049vw;
+  background-image: url('../images/tihohodka.svg');
+  margin: 2vw 0;
+}
+.tihohodka:hover {
+  animation-play-state: paused;
+  background-position: -16.8028vw top !important;
+}
+.path:hover {
+  animation-play-state: paused;
+}
+.walk {
+  animation: walk 0.4s steps(1) infinite;
+}
+.path {
+  width: 8.4014vw;
+  height: 4.3049vw;
+  position: relative;
+  top: 0;
+  animation: path 4s linear infinite;
+}
