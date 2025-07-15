@@ -1,0 +1,225 @@
+/* _______________________HEADER____________________ */
+.headerStrokeContainer {
+  width: 100%;
+  height: 2.8vw;
+  overflow: hidden;
+  border-bottom: 2px solid var(--blue);
+  border-top: 2px solid var(--blue);
+  position: relative;
+}
+.headerStroke {
+  font-size: 1.4vw;
+  width: 294%;
+  position: absolute;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.5vw 0;
+}
+.headerCover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vw;
+}
+.h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 5vw;
+  position: relative;
+  z-index: 5;
+}
+.h1 div {
+  width: 1.5vw;
+  height: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  color: var(--black);
+  text-align: center;
+  border-radius: 100%;
+  font-size: 1.1vw;
+}
+.electron,
+.proton {
+  position: absolute;
+  border: 2px solid var(--black);
+}
+/* .headerLetters {
+  display: flex;
+}
+.headerLetters h2 {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.headerLetters span {
+  line-height: 0.8;
+  border: 2px solid var(--blue);
+} */
+.proton:hover,
+.electron:hover {
+  animation-play-state: paused;
+}
+.headerLines {
+  width: 90%;
+  height: 40vw;
+  background-image: url('../images/bg-header-lines.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 0;
+}
+.headerCircles {
+  width: 80%;
+  height: 50vw;
+  background-image: url('../images/bg-header.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 0;
+  left: 10vw;
+}
+
+/* _______________________NICA____________________ */
+
+.nica {
+  width: 100%;
+  height: 57.638vw;
+  background-image: url('../images/nika.svg');
+  background-position: center;
+  background-size: 93.3% 38.5vw;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.nica img {
+  width: 2vw;
+  position: absolute;
+}
+.nica img:nth-of-type(1) {
+  top: 4.4vw;
+  left: 80vw;
+}
+.nica img:nth-of-type(2) {
+  top: 10.73vw;
+  left: 21.6vw;
+}
+.nica img:nth-of-type(3) {
+  top: 6.5vw;
+  left: 88.7vw;
+}
+.nica img:nth-of-type(4) {
+  top: 18vw;
+  left: 53.125vw;
+}
+.nica img:nth-of-type(5) {
+  top: 40vw;
+  left: 10vw;
+}
+#restartBtn {
+  width: 10vw;
+  height: 5vw;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  background-color: transparent;
+  font-size: 1.5vw;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+  left: calc(50% - 6vw);
+  top: 85%;
+  border-radius: 2vw;
+}
+#canvasNICA {
+  margin-top: 1.8vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.text {
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgba(40, 40, 40, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 2vw;
+  border-radius: 2vw;
+  border: 2px solid var(--white);
+  display: none;
+}
+.text h3 {
+  font-size: 2vw;
+  margin-bottom: 1.6vw;
+}
+.text p {
+  font-size: 1.2vw;
+  line-height: 1.3;
+}
+.question:hover + .text {
+  display: block;
+}
+.question:hover {
+  transition: all ease 0.4s;
+  color: white;
+  transform: scale(1.4);
+  animation-play-state: paused;
+}
+.question {
+  position: absolute;
+  z-index: 10;
+  top: 2vw;
+  left: 4vw;
+  font-size: 1.4vw;
+  user-select: none;
+  transition: all ease 0.2s;
+  cursor: help;
+}
+.question2 {
+  top: 6vw;
+}
+
+/* _______________________ATOM AND BIG BANG____________________ */
+.atomAndBigBang {
+  display: flex;
+}
+.atom {
+  width: 36%;
+  height: 34vw;
+  background-color: var(--blue);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-atom,
+.right-atom {
+  width: 35.183vw;
+  height: 27.396vw;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.left-atom {
+  background-image: url('../images/atom-left.svg');
+}
+.right-atom {
+  background-image: url('../images/atom-right.svg');
+}
+.el {
+  width: 3.7vw;
+  height: 3.7vw;
+  background-image: url('../images/el.svg');
+  background-size: cover;
+}
+.yadro {
+  width: 22vw;
+  height: 22vw;
+  background-image: url('../images/yadro.svg');
+  background-size: contain;
+}
+.bigBang {
+  background-image: url('../images/big-bang.svg');
+  width: 64%;
+  height: 34vw;
+  background-size: cover;
+}
+/* _______________________COMICS____________________ */

@@ -1,0 +1,325 @@
+.headerStroke {
+  animation: marque 20s infinite linear;
+}
+@keyframes marque {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -147%;
+  }
+}
+.electron {
+  animation: electrons 5s infinite linear;
+}
+.electron1 {
+  margin: 37% 0% 0% -30%;
+  animation: electrons 7s linear infinite;
+}
+
+.electron2 {
+  margin: -54% 0% 0% -31%;
+  animation: electrons2 6s linear infinite;
+  animation-delay: 0.2s;
+}
+
+.electron3 {
+  margin: 46% 0% 0% 141%;
+  animation: electrons3 8s linear infinite;
+  animation-delay: 0.8s;
+}
+
+.electron4 {
+  margin: 55% 0% 0% 105%;
+  animation: electrons4 10s linear infinite;
+  animation-delay: 0.4s;
+}
+
+.electron5 {
+  margin: -53% 0% 0% 63%;
+  animation: electrons5 6s linear infinite;
+  animation-delay: 0.45s;
+}
+
+.electron6 {
+  margin: -67% 0% 0% 139%;
+  animation: electrons6 5s linear infinite;
+  animation-delay: 0.13s;
+}
+
+.electron7 {
+  margin: 21% 0% 0% 32%;
+  animation: electrons7 7s linear infinite;
+  animation-delay: 0.1s;
+}
+
+.electron8 {
+  margin: 29% 0% 0% 66%;
+  animation: electrons8 8s linear infinite;
+  animation-delay: 0.14s;
+}
+
+.electron9 {
+  margin: 79% 0% 0% 25%;
+  animation: electrons9 9s linear infinite;
+  animation-delay: 0.12s;
+}
+
+.electron10 {
+  margin: 18% 0% 0% -8%;
+  animation: electrons 10s linear infinite;
+  animation-delay: 0.6s;
+}
+@keyframes electrons {
+  0% {
+    transform: rotate(0deg) translateX(17vw) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(17vw) rotate(-360deg);
+  }
+}
+@keyframes protons {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  30% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, -2px);
+  }
+  70% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  90% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.proton {
+  position: absolute;
+  animation: protons 0.5s linear infinite both;
+}
+.proton1 {
+  margin: -20% 0% 0% -4%;
+}
+.proton2 {
+  margin: -19% 0% 0% -33%;
+}
+.proton3 {
+  margin: 7% 0% 0% -16%;
+}
+.proton4 {
+  margin: -3% 0% 0% 4%;
+}
+.proton5 {
+  margin: 10% 0% 0% 10%;
+}
+.proton6 {
+  margin: -8% 0% 0% 21%;
+}
+.proton7 {
+  margin: -13% 0% 0% -7%;
+}
+.proton8 {
+  margin: 13% 0% 0% 36%;
+}
+
+@keyframes electrons2 {
+  from {
+    transform: rotate(0deg) translateX(10vw) rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg) translateX(10vw) rotate(360deg);
+  }
+}
+
+@keyframes electrons3 {
+  from {
+    transform: rotate(0deg) translateX(15vw) rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg) translateX(15vw) rotate(360deg);
+  }
+}
+
+@keyframes electrons4 {
+  from {
+    transform: rotate(0deg) translateX(13vw) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(13vw) rotate(-360deg);
+  }
+}
+
+@keyframes electrons5 {
+  from {
+    transform: rotate(0deg) translateX(12vw) rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg) translateX(12vw) rotate(360deg);
+  }
+}
+
+@keyframes electrons6 {
+  from {
+    transform: rotate(0deg) translateX(10vw) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(10vw) rotate(-360deg);
+  }
+}
+
+@keyframes electrons7 {
+  from {
+    transform: rotate(0deg) translateX(18vw) rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg) translateX(18vw) rotate(360deg);
+  }
+}
+
+@keyframes electrons8 {
+  from {
+    transform: rotate(0deg) translateX(18vw) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(18vw) rotate(-360deg);
+  }
+}
+
+@keyframes electrons9 {
+  from {
+    transform: rotate(0deg) translateX(8vw) rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg) translateX(8vw) rotate(360deg);
+  }
+}
+
+.headerCircles {
+  animation: headerCircles 16s infinite ease-in;
+}
+@keyframes headerCircles {
+  0% {
+    width: 50%;
+  }
+  50% {
+    width: 80%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.nica img:nth-of-type(4) {
+  animation: rotate 8s infinite linear;
+}
+.nica img:nth-of-type(2) {
+  animation: scale 8s infinite ease;
+}
+.nica img:nth-of-type(1),
+.nica img:nth-of-type(3),
+.nica img:nth-of-type(5) {
+  animation: scale 4s infinite ease;
+}
+.nica img:nth-of-type(2) {
+  animation-delay: -2s;
+}
+.nica img:nth-of-type(1) {
+  animation-delay: -3s;
+}
+.nica img:nth-of-type(3) {
+  animation-delay: -5s;
+}
+.nica img:nth-of-type(5) {
+  animation-delay: -6s;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.question {
+  animation: question 2s linear infinite;
+}
+@keyframes question {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.right-atom .el {
+  animation: ellipse 3s infinite ease-in-out;
+  position: absolute;
+  top: 10vw;
+  left: 18vw;
+}
+.left-atom .el {
+  animation: ellipse2 3s infinite ease-in-out -1.5s;
+  position: absolute;
+  top: 9vw;
+  left: 16vw;
+}
+
+@keyframes ellipse {
+  from {
+    transform: skewX(40deg) rotate(0deg) translateY(-8vw) rotate(0deg)
+      skewX(-40deg) rotate(0deg);
+  }
+  to {
+    transform: skewX(40deg) rotate(360deg) translateY(-8vw) rotate(-360deg)
+      skewX(-40deg) rotate(360deg);
+  }
+}
+@keyframes ellipse2 {
+  from {
+    transform: skewX(-40deg) rotate(0deg) translateY(-8vw) rotate(0deg)
+      skewX(40deg) rotate(0deg);
+  }
+  to {
+    transform: skewX(-40deg) rotate(360deg) translateY(-8vw) rotate(-360deg)
+      skewX(40deg) rotate(360deg);
+  }
+}
+.left-atom,
+.right-atom,
+.yadro {
+  animation: rotate 16s infinite linear;
+}
