@@ -157,6 +157,14 @@
 .text p + p {
   margin-top: 1.5vw;
 }
+.text.a {
+  width: 100%;
+  background-color: rgba(10, 10, 10, 0.5);
+}
+.text.qG {
+  background-color: rgba(10, 10, 10, 0.5);
+  color: var(--blue);
+}
 .question:hover + .text {
   display: block;
 }
@@ -199,7 +207,8 @@
 .atom {
   width: 36%;
   height: 34vw;
-  background-color: var(--blue);
+  background-image: url('../images/atom-bg.svg');
+  background-size: cover;
   position: relative;
   display: flex;
   justify-content: center;
@@ -212,6 +221,7 @@
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 2;
 }
 .left-atom {
   background-image: url('../images/atom-left.svg');
@@ -243,6 +253,7 @@
   width: 100%;
   height: 50vw;
   position: relative;
+  border-bottom: 2px solid var(--blue);
 }
 .comicsFraim,
 .comicsText {
@@ -300,19 +311,27 @@
 /* _______________________TIHOHODKA____________________ */
 .tihohodkaWalk {
   background-color: var(--dark);
+  overflow: hidden;
 }
-.tihohodkaWalk:nth-of-type(2) {
+.tihohodkaWalk.second {
   transform: rotate(180deg);
+  position: relative;
+  top: -2vw;
+  z-index: 1;
 }
 .tihohodka {
   width: 8.4014vw;
   height: 4.3049vw;
   background-image: url('../images/tihohodka.svg');
   margin: 2vw 0;
+  transform: translateX(-100%);
 }
 .tihohodka:hover {
   animation-play-state: paused;
   background-position: -16.8028vw top !important;
+}
+.second .path {
+  animation-delay: 4s;
 }
 .path:hover {
   animation-play-state: paused;
@@ -325,5 +344,95 @@
   height: 4.3049vw;
   position: relative;
   top: 0;
-  animation: path 4s linear infinite;
+  animation: path 8s linear infinite;
+}
+
+/* _______________________BIG NICA____________________ */
+
+.bigNICA {
+  width: 100%;
+  height: 60.417vw;
+  background-image: url('../images/bigNICA.svg');
+  background-size: 1100vw 60.417vw;
+}
+h4 {
+  margin-top: 1.4vw;
+}
+li {
+  line-height: 1.2vw;
+}
+/* _______________________QWARK GLUON and FASA____________________ */
+.agregatAndPlasma {
+  width: 100%;
+  display: flex;
+  height: 36.25vw;
+}
+.agregat {
+  width: 40%;
+  height: 100%;
+  background-image: url('../images/fase-perehod.svg');
+  background-size: calc(383.3vw * 0.4) 43.3vw;
+  animation: agregat 8s infinite steps(1);
+}
+.plasma {
+  width: 60%;
+  height: 36.25vw;
+  background-image: url('../images/quark-gluon.svg');
+  background-size: 1000vw 60.4vw;
+  filter: grayscale(1);
+}
+/* _______________________MUSIC____________________ */
+.switch {
+  position: relative;
+  display: inline-block;
+  position: fixed;
+  z-index: 30;
+  top: 2vw;
+  right: 2vw;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: var(--blue);
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--blue);
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
 }

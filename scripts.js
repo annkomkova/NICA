@@ -6,8 +6,21 @@ document.addEventListener('DOMContentLoaded', () => {
   animElectrons()
   animNICA()
   showComics()
+  playAudio()
   // showTextOnHover()
 })
+function playAudio() {
+  const Switch = document.querySelector('input[type=checkbox]'),
+    audio = document.querySelector('audio')
+
+  Switch.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play()
+    } else {
+      audio.pause()
+    }
+  })
+}
 function showComics() {
   const button = document.querySelector('.comicsButton')
   const left = document.querySelector('.comicsLeft')
